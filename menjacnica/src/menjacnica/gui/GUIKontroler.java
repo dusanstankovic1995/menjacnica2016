@@ -132,7 +132,7 @@ public class GUIKontroler {
 
 	public static double izvrsiZamenu(Valuta v, boolean prodaja, String iznos) {
 		try {
-			double konacniIznos = glavniProzor.sistem.izvrsiTransakciju(v, prodaja, Double.parseDouble(iznos));
+			double konacniIznos = sistem.izvrsiTransakciju(v, prodaja, Double.parseDouble(iznos));
 
 			return konacniIznos;
 		} catch (Exception e1) {

@@ -1,7 +1,5 @@
 package menjacnica.gui;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -10,16 +8,12 @@ import javax.swing.JLabel;
 
 import java.awt.Dimension;
 
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-import javax.swing.JComboBox;
-import javax.swing.DefaultComboBoxModel;
 import javax.swing.JRadioButton;
 import javax.swing.JButton;
 import javax.swing.JSlider;
 import javax.swing.event.ChangeListener;
 import javax.swing.event.ChangeEvent;
-import javax.swing.plaf.basic.BasicBorders.RadioButtonBorder;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -50,7 +44,6 @@ public class IzvrsiZamenuGUI extends JFrame {
 	private JLabel lblKonacniIznos;
 	private JTextField textFieldKonacniIznos;
 
-	private MenjacnicaGUI glavniProzor;
 	private Valuta valuta;
 
 	/**
@@ -82,8 +75,6 @@ public class IzvrsiZamenuGUI extends JFrame {
 		contentPane.add(getLblKonacniIznos());
 		contentPane.add(getTextFieldKonacniIznos());
 
-		// podesavanje
-		this.glavniProzor = glavniProzor;
 		this.valuta = valuta;
 
 		prikaziValutu();

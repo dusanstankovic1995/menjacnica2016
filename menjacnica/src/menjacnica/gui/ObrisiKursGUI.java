@@ -1,7 +1,5 @@
 package menjacnica.gui;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -10,7 +8,6 @@ import javax.swing.border.EmptyBorder;
 import java.awt.GridLayout;
 
 import javax.swing.JLabel;
-import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.JButton;
 import javax.swing.SwingConstants;
@@ -42,7 +39,6 @@ public class ObrisiKursGUI extends JFrame {
 	private JCheckBox chckbxZaistaObrisiKurs;
 	private JLabel label;
 
-	private MenjacnicaGUI glavniProzor;
 	private Valuta valuta;
 
 	/**
@@ -75,8 +71,6 @@ public class ObrisiKursGUI extends JFrame {
 		contentPane.add(getBtnDodaj());
 		contentPane.add(getBtnOdus());
 
-		// podesavanje
-		this.glavniProzor = glavniProzor;
 		this.valuta = valuta;
 
 		prikaziValutu();

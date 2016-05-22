@@ -1,14 +1,12 @@
 package menjacnica.gui;
 
 import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.table.DefaultTableModel;
 
 import java.awt.Toolkit;
 
@@ -17,12 +15,8 @@ import javax.swing.JButton;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 
-import javax.swing.JFileChooser;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
-import javax.swing.JOptionPane;
-import javax.swing.JTextArea;
-import javax.swing.border.TitledBorder;
 import javax.swing.JMenuItem;
 import javax.swing.KeyStroke;
 
@@ -33,20 +27,15 @@ import javax.swing.ImageIcon;
 import javax.swing.JPopupMenu;
 
 import java.awt.Component;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
 
-import javax.swing.JList;
 
 import menjacnica.Menjacnica;
-import menjacnica.Valuta;
 import menjacnica.gui.models.MenjacnicaTableModel;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.File;
 
 public class MenjacnicaGUI extends JFrame {
 
@@ -64,8 +53,6 @@ public class MenjacnicaGUI extends JFrame {
 	private JMenuItem mntmExit;
 	private JMenuItem mntmAbout;
 
-	// klasa na logickom nivou
-	protected Menjacnica sistem;
 	private JTable table;
 
 	/**
@@ -94,7 +81,6 @@ public class MenjacnicaGUI extends JFrame {
 		contentPane.add(getScrollPane(), BorderLayout.CENTER);
 		contentPane.add(getPanel(), BorderLayout.EAST);
 
-		sistem = new Menjacnica();
 	}
 
 	private JScrollPane getScrollPane() {
